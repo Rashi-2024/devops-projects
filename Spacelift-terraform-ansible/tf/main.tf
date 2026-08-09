@@ -58,7 +58,7 @@ resource "aws_instance" "this" {
   ami                         = each.value.ami
   instance_type               = each.value.instance_type
   # key_name                    = aws_key_pair.ssh_key.key_name
-  key_name                    = aws_login
+  key_name                    = "aws_login"
   associate_public_ip_address = true
 
   
